@@ -25,8 +25,13 @@ class Graficos:
         plt.subplot (1,2,2)
         plt.pie (parametros, labels=nombre, colors = colores)
         plt.show()
-        tierra = df.iloc[88]
+        tierra = datos.iloc[88]
+        venus = datos.iloc[263]
+        saturno= datos.iloc[228]
+        urano = datos.iloc[260]
         print(tierra)
-        
+        print(saturno)
+        print(urano)
+        print(venus)
 
 Graficos.grafico()
