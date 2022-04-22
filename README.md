@@ -22,6 +22,8 @@ Para proseguir, la tripulación debe conseguir los datos referentes a las condic
 Analizando el cvs tenemos:
 
       eName:Uranus	isPlanet:VERDADERO	semimajorAxis:2870658186	perihelion:2147483647	aphelion:2147483647	eccentricity:457	inclination:772	density:1	gravity:8.87	escape:21380	meanRadius:25362	equaRadius:25559	polarRadius:24973	flattening:2293	dimension:NA	sideralOrbit:30685.4	sideralRotation:-17.24	discoveryDate:13/03/1781	mass_kg:86800000000000000000000000	volume:68300000000000	orbit_type:Primary	orbits:NA	bondAlbido:0.3	geomAlbido:488	RV_abs:296744357103154	p_transit:2510000000000	transit_visibility:4525328742848800	transit_depth:13265444757661600	massj:45684210526315700	semimajorAxis_AU:##########	grav_int:1400000000000000000000
-
+      
+      
+Volviendo a la teoría del agujero negro, no solo es muy poco probable, sino que además no existen en nuestra base de datos(el segundo cvs que poseemos) ningún exoplaneta cuya gravedad se corresponda con los valores experimentales que tenemos a nuestra disposición.
 
 ![image](https://user-images.githubusercontent.com/91721855/164700985-14a01416-0b30-4d83-a497-8816a521bf49.png)
