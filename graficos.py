@@ -31,10 +31,8 @@ class Graficos:
         plt.subplot (1,2,2)
         plt.pie (parametros, labels=nombre, colors = colores)
         plt.show()
-        tierra = datos.iloc[86]
-        venus = datos.iloc[261]
-        saturno= datos.iloc[226]
-        urano = datos.iloc[258]
+        tierra = datos.iloc[86] ; venus = datos.iloc[261]
+        saturno= datos.iloc[226] ; urano = datos.iloc[258]
         print(f"\n Los datos de la tierra son: \n {tierra}") ; print(f"\n Los datos de venus son: \n  {venus}")
         print(f"\n Los datos de saturno son: \n {saturno}") ; print(f"\n Los datos de urano son: \n {urano}")
 
