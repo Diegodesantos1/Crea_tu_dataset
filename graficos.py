@@ -7,11 +7,9 @@ class Graficos:
         gravedad_util = []
         print(lista_gravedad)
         for i in range (len(lista_gravedad)):
-            dato = lista_gravedad.pop(0)
-            if 8 < dato < 10.5:
-                gravedad_util.append(dato)
-            else:
-                pass
+            if 8.0 < lista_gravedad[i] <10.5:
+                gravedad_util.append(lista_gravedad[i])
+
         print(gravedad_util)
 
 Graficos.grafico()
