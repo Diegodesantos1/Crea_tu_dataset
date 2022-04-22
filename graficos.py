@@ -5,14 +5,22 @@ import numpy as np
 class Graficos:
     def grafico():
         datos = pd.read_csv("Dataset.csv", sep =",")
+        datos_exo = pd.read_csv("PS_2022.04.22_04.00.41.csv", sep =",")
         lista_gravedad = list(datos["gravity"])
         lista_nombres = list(datos["eName"])
+        lista_gravedad_exo = list(datos_exo["st_logg"])
+        lista_nombres_exo = list(datos_exo["pl_name"])
         gravedad_util, nombres_util = [], []
         print(lista_gravedad)
+        print(lista_gravedad_exo)
         for i in range (len(lista_gravedad)):
             if 8.0 < lista_gravedad[i] <10.5:
                 gravedad_util.append(lista_gravedad[i])
                 nombres_util.append(lista_nombres[i])
+        for i in range(len(lista_gravedad_exo)):
+            if 8.0 < lista_gravedad_exo[i] < 10.5:
+                gravedad_util.append(lista_nombres_exo[i])
+                nombres_util.append(lista_nombres_exo[i])
 
         print(gravedad_util)
         print("son las gravedades correspondientes a los siguientes nombres:")
@@ -25,13 +33,8 @@ class Graficos:
         plt.subplot (1,2,2)
         plt.pie (parametros, labels=nombre, colors = colores)
         plt.show()
-        tierra = datos.iloc[88]
-        venus = datos.iloc[263]
-        saturno= datos.iloc[228]
-        urano = datos.iloc[260]
+        tierra = df.iloc[88]
         print(tierra)
-        print(saturno)
-        print(urano)
-        print(venus)
+        
 
 Graficos.grafico()
