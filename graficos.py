@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt
 class Graficos:
     def grafico():
         datos = pd.read_csv("Dataset.csv", sep =",")
+        datos_exo = pd.read_csv("PS_2022.04.22_04.00.41.csv", sep =",")
         lista_gravedad = list(datos["gravity"])
         lista_nombres = list(datos["eName"])
+        lista_gravedad_exo = list(datos_exo["st_logg"])
+        lista_nombres_exo = list(datos_exo["pl_name"])
         gravedad_util, nombres_util = [], []
         for i in range (len(lista_gravedad)):
             if 8.0 < lista_gravedad[i] <10.5:
