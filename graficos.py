@@ -32,7 +32,7 @@ class Graficos:
             a=nombres_util.pop(0)
             b = gravedad_util.pop(0)
             diccionario[a] = b
-        print(f"Los planetas junto a sus gravedades en los que nos podríamos encontrar son: {diccionario}\n \n")
+        print(f"\n\nExisten 265 planetas y cuerpos del sistema solar con gravedad, pero solo estos cumplen las condiciones {diccionario}")
         utiles_porcentaje = 0.01509433962 ; no_utiles_porcentaje = 1 -utiles_porcentaje
         parametros = [utiles_porcentaje, no_utiles_porcentaje] ; colores1 = ["#AAF683", "#EE6055"] ; colores2 = ["r", "r", "r", "g", "r", "g", "r", "r", "r", "r", "r", "r", "r", "g", "g"]
         plt.bar (nombres_grafico1, gravedad_grafico1, color = "red") ; plt.ylabel("Gravedad") ; plt.xlabel("Cuerpos Celestes"); plt.title("Sistema Solar") ; plt.show()
