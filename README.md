@@ -49,4 +49,5 @@ Por último, y más importante, el tiempo. El tiempo es la incógnita que decide
 *** Todos los datos extraídos del dataset, al igual que los gráficos, pueden ser comprobados en las funciones desarrolladas en este repositorio en el archivo gráficos.py
 
 [Aquí gráficos]
+
 Gráficos que comparan las temperaturas y presiones de todos los planetas del sistema solar.
