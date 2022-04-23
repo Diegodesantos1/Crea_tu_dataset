@@ -3,11 +3,9 @@ from pandas import DataFrame as df
 import matplotlib.pyplot as plt
 import numpy as np
 class Graficos:
-    def grafico():
+    def sistema_solar():
         datos = pd.read_csv("Dataset1.csv", sep =";")
-        datos_exo = pd.read_csv("PS_2022.04.22_04.00.41.csv", sep =",")
         lista_gravedad = list(datos["gravity"]) ; lista_nombres = list(datos["eName"])
-        lista_gravedad_exo = list(datos_exo["st_logg"]) ; lista_nombres_exo = list(datos_exo["pl_name"])
         lista_gravedad_util, lista_nombres_util,gravedad_util, nombres_util, gravedad_grafico1, nombres_grafico1, gravedad_grafico2, nombres_grafico2, gravedad_grafico3, nombres_grafico3, gravedad_grafico4, nombres_grafico4 = [], [], [], [], [], [], [], [], [], [], [], []
         diccionario = {}
         # print(lista_gravedad) ; print(lista_gravedad_exo)
@@ -15,10 +13,6 @@ class Graficos:
             if 8.0 < lista_gravedad[i] <10.5:
                 gravedad_util.append(lista_gravedad[i])
                 nombres_util.append(lista_nombres[i])
-        for i in range(len(lista_gravedad_exo)):
-            if 8.0 < lista_gravedad_exo[i] < 10.5:
-                gravedad_util.append(lista_nombres_exo[i])
-                nombres_util.append(lista_nombres_exo[i])
         for i in range (len(lista_gravedad)):
             if lista_gravedad[i] != 0:
                 lista_gravedad_util.append(lista_gravedad[i])
@@ -39,7 +33,7 @@ class Graficos:
             a=nombres_util.pop(0)
             b = gravedad_util.pop(0)
             diccionario[a] = b
-        print(f"Las planetas junto a sus gravedades en los que nos podríamos encontrar son: {diccionario}\n \n")
+        print(f"Los planetas junto a sus gravedades en los que nos podríamos encontrar son: {diccionario}\n \n")
         utiles_porcentaje = 0.01509433962 ; no_utiles_porcentaje = 1 -utiles_porcentaje
         parametros = [utiles_porcentaje, no_utiles_porcentaje] ; colores = ["#AAF683", "#EE6055"]
         plt.bar (nombres_grafico1, gravedad_grafico1) ; plt.ylabel("Gravedad") ; plt.xlabel("Cuerpos Celestes"); plt.title("Sistema Solar") ; plt.show()
@@ -53,8 +47,17 @@ class Graficos:
         saturno= datos.iloc[226] ; urano = datos.iloc[258]
         print(f"\n Los datos de la tierra son: \n {tierra}") ; print(f"\n Los datos de venus son: \n  {venus}")
         print(f"\n Los datos de saturno son: \n {saturno}") ; print(f"\n Los datos de urano son: \n {urano}")
-
-Graficos.grafico()
+    def exoplanetas():
+        gravedad_util, nombres_util = [], []
+        datos_exo = pd.read_csv("PS_2022.04.22_04.00.41.csv", sep =",")
+        lista_gravedad_exo = list(datos_exo["st_logg"]) ; lista_nombres_exo = list(datos_exo["pl_name"])
+        for i in range(len(lista_gravedad_exo)):
+            if 8.0 < lista_gravedad_exo[i] < 10.5:
+                gravedad_util.append(lista_nombres_exo[i])
+                nombres_util.append(lista_nombres_exo[i])
+        print(f"No existen exoplanetas junto a sus gravedades en los que nos podríamos encontrar\n")
+Graficos.sistema_solar()
+Graficos.exoplanetas()
 
 def datosTemperaturas():
     datos = pd.read_csv("planetas.csv", sep =",").to_dict()
