@@ -4,7 +4,7 @@
 
 ---
 
-En este [repositorio](https://github.com/Diegodesantos1/Crea_tu_dataset)
+Este es el link del [repositorio](https://github.com/Diegodesantos1/Crea_tu_dataset)
 ***
 
 ## Autores de este proyecto
