@@ -25,9 +25,7 @@ class Graficos:
         utiles_porcentaje = 0.01509433962
         no_utiles_porcentaje = 1 -utiles_porcentaje
         parametros = [utiles_porcentaje, no_utiles_porcentaje] ; colores = ["#AAF683", "#EE6055"]
-        plt.subplot(1,2,1)
-        plt.bar (nombres_util, gravedad_util, color = ["r", "g", "b", "y"])
-        plt.subplot (1,2,2)
+        plt.bar (lista_nombres, lista_gravedad) ; plt.show()
         plt.pie (parametros, colors = colores, autopct="%0.1f %%")
         plt.legend(["Gravedad válida", "Gravedad no válida"], loc='upper right')
         plt.show()
@@ -36,7 +34,7 @@ class Graficos:
         print(f"\n Los datos de la tierra son: \n {tierra}") ; print(f"\n Los datos de venus son: \n  {venus}")
         print(f"\n Los datos de saturno son: \n {saturno}") ; print(f"\n Los datos de urano son: \n {urano}")
 
-# Graficos.grafico()
+Graficos.grafico()
 
 def datosTemperaturas():
     datos = pd.read_csv("planetas.csv", sep =",").to_dict()
