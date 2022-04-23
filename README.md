@@ -47,3 +47,6 @@ Por último, y más importante, el tiempo. El tiempo es la incógnita que decide
 ** Suponemos que la nave debe ser MUY avanzada para poder realizar este viaje con tripulación, así que quizás tenga alguna de las funciones mencionadas(reciclaje a base de hidrógeno, autoreparación y autogestión...).
 
 *** Todos los datos extraídos del dataset, al igual que los gráficos, pueden ser comprobados en las funciones desarrolladas en este repositorio en el archivo gráficos.py
+
+[Aquí gráficos]
+Gráficos que comparan las temperaturas y presiones de todos los planetas del sistema solar.
