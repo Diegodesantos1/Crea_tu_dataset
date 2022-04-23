@@ -18,6 +18,8 @@ En este [repositorio](https://github.com/Diegodesantos1/Crea_tu_dataset)
 Este dataset está compuesto por un archivo csv que tiene registrados todos los planetas, satélites y lunas registrados en el sistema solar. En base a este dataset hemos conseguido una lista de los planetas cuya gravedad está comprendida entre 8 y 10,5. Estos valores provienen de los experimentos realizados por la valiente tripulación en los que han calculado un valor aproximado de la gravedad en la que se encuentran(9,45 y 9,18). En base a estos valores y asumiendo un error de medida de una unidad en ambos extremos hemos conseguido 4 cuerpos celestes, en este caso todos planetas, que son: Venus, La tierra, Saturno y Urano. Basándonos en nuestros resultados, la gravedad del planeta que más se acerca a la gravedad experimental calculada(media de las dos gravedades = 9,315) es la de Mercurio o Venus(tienen la misma gravedad). 
 Con estos resultados, y descartando para este primer análisis la idea de haber sido absorbidos por un agujero negro que distorsione el espacio o incluso el tiempo, podemos concluir que el planeta en el que estamos es Urano, ya que Venus no es opción al no estar en nuestra ruta preestablecida al comienzo del viaje.
 
+![image](https://user-images.githubusercontent.com/91721855/164700985-14a01416-0b30-4d83-a497-8816a521bf49.png)
+
 Para proseguir, la tripulación debe conseguir los datos referentes a las condiciones atmosféricas del planeta para poder prepararse para dormir hasta el rescate de forma segura.
 Analizando el cvs tenemos:
 
@@ -25,5 +27,3 @@ Analizando el cvs tenemos:
       
       
 Volviendo a la teoría del agujero negro, no solo es muy poco probable, sino que además no existen en nuestra base de datos(el segundo cvs que poseemos(PS...)) ningún exoplaneta cuya gravedad se corresponda con los valores experimentales que tenemos a nuestra disposición.
-
-![image](https://user-images.githubusercontent.com/91721855/164700985-14a01416-0b30-4d83-a497-8816a521bf49.png)
