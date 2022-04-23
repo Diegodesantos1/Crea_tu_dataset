@@ -51,3 +51,22 @@ Por último, y más importante, el tiempo. El tiempo es la incógnita que decide
 [Aquí gráficos]
 
 (Gráficos que comparan las temperaturas y presiones de todos los planetas del sistema solar.)
+
+![image](https://user-images.githubusercontent.com/91721855/164943985-75eaf45f-3553-45ac-b012-d5a5c7028d41.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164943993-cbc676f9-06e6-4dcd-843f-d980c27ad4c3.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164944003-28dabed7-c6ee-450c-9b01-01ff54ef4930.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164944008-395bf723-8ff9-419f-b690-656b03fb4b35.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164944015-5b5cf276-90c0-4dee-a539-fc9643aa55a3.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164944026-34788991-e1e1-4f8c-be66-40b64daf9c0e.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164944035-28b6a472-0438-43cb-b8c9-41d5e5dc6da7.png)
+
+
+
+
+
