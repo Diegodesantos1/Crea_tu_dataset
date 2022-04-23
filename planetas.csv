@@ -1,9 +1,9 @@
-Nombre, Temperatura
-Mercurio, 166
-Venus, 463.85
-Tierra, 14.05
-Marte, -46
-Jupiter, -121.15
-Saturno, -130.15
-Urano, -205.2
-Neptuno, -220
+Nombre, Presión(kPa), TemperaturaMínima(k), TemperaturaMedia(k), TemperaturaMáxima(k), Composición(+Abundante), Porcentaje(CAbundante), Composición(2+Abundante), Porcentaje(2+CAbundante), Composición(3+Abundante), Porcentaje(3+CAbundante), EstructuraTerrestre, Agua
+Mercurio, 101.325, 90, 440, 700, K, 31.7, Na, 24.9, O, 9.5, Rocosa, Si
+Venus, 9321.9, 228, 737, 773, CO2, 96, N, 3, SO2, 0.015, Rocosa, No
+Tierra, 101.325, 184, 287.2, 331, N, 78.08, O, 20.95, Ar, 0.93, Rocosa, Si
+Marte, 0.636, 186, 227, 293, CO2, 95.32, N, 2.7, Ar, 1.6, Rocosa, Si
+Jupiter, 70, 110, 152, 198, H, 81, He, 17, CH4, 0.1, Gaseoso, Si
+Saturno, 140, 82, 143, 200, H, 93, He, 5, CH4, 0.2, Gaseoso, No
+Urano, 120, 59, 68, 68, H, 83, He, 15, CH4, 1.99, Helado, Si  
+Neptuno, 100000, 50, 53, 56, H, 84, He, 12, CH4, 2, Helado, Si
