@@ -36,4 +36,31 @@ class Graficos:
         print(f"\n Los datos de la tierra son: \n {tierra}") ; print(f"\n Los datos de venus son: \n  {venus}")
         print(f"\n Los datos de saturno son: \n {saturno}") ; print(f"\n Los datos de urano son: \n {urano}")
 
-Graficos.grafico()
+# Graficos.grafico()
+
+def datosTemperaturas():
+    datos = pd.read_csv("planetas.csv", sep =",").to_dict()
+    planetas = 7
+    datos_dict = []
+    print(datos)
+    for i in range(planetas):
+        datos_dict.append({
+            datos['Nombre'][i]:{
+                'Presión(kPa)': datos['Presión(kPa)'][i],
+                'TemperaturaMínima(k)': datos['TemperaturaMínima(k)'][i],
+                'TemperaturaMáxima(k)': datos['TemperaturaMáxima(k)'][i],
+                'TemperaturaMedia(k)': datos['TemperaturaMedia(k)'][i],
+                'Composición(+Abundante)': datos['Composición(+Abundante)'][i],
+                'Composición(2+Abundante)': datos['Composición(2+Abundante)'][i],
+                'Composición(3+Abundante)': datos['Composición(3+Abundante)'][i],
+                'Porcentaje(CAbundante)': datos['Porcentaje(CAbundante)'][i],
+                'Porcentaje(2+CAbundante)': datos['Porcentaje(2+CAbundante)'][i],
+                'Porcentaje(3+CAbundante)': datos['Porcentaje(3+CAbundante)'][i],
+                'EstructuraTerrestre': datos['EstructuraTerrestre'][i],
+                'Agua': datos['Agua'][i],
+                'TiempodeRotación(años)': datos['TiempodeRotación(años)'][i]
+            }
+        })
+    print(datos_dict)
+
+datosTemperaturas()
