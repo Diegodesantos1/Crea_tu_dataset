@@ -84,10 +84,31 @@ class Dataset2:
                 }
             })
         print(datos_dict)
-        
-
+    def graficos():
+        datos_grafica = pd.read_csv("planetas.csv", sep =",")
+        temp_min = list(datos_grafica["TemperaturaMínima(k)"]) ; temp_med = list(datos_grafica["TemperaturaMedia(k)"]) ; temp_max = list(datos_grafica["TemperaturaMáxima(k)"]) ; nombres = list(datos_grafica["Nombre"]) ; presion = list(datos_grafica["Presión(kPa)"])
+        a = 0 ; b = 0 ; c = 0 ; d = 0
+        for i in temp_min:
+            a += i
+        media_min = a/len(temp_min)
+        for i in temp_med:
+            b += i
+        media_med = b/len(temp_med)
+        for i in temp_max:
+            c += i
+        media_max = c/len(temp_max)
+        for i in presion:
+            d += i
+        media_pres = d/len(presion)
+        plt.subplot(2,2,1) ; plt.bar (nombres, temp_min, color = "blue") ; plt.ylabel("Temperaturas Mínimas (K)") ; plt.xlabel("Planetas"); plt.title("Tª Mínimas del Sistema Solar") ; plt.axhline(y=media_min, color="black", linestyle='solid')
+        plt.subplot(2,2,2) ; plt.bar (nombres, temp_med, color = "yellow") ; plt.ylabel("Temperaturas Medias (K)") ; plt.xlabel("Planetas"); plt.title("Tª Medias del Sistema Solar") ;  plt.axhline(y=media_med, color="black", linestyle='solid')
+        plt.subplot(2,2,3) ; plt.bar (nombres, temp_max, color = "red") ; plt.ylabel("Temperaturas Máxima (K)") ; plt.xlabel("Planetas"); plt.title("Tª Máximas del Sistema Solar") ;   plt.axhline(y=media_max, color="black", linestyle='solid')
+        plt.subplot(2,2,4) ; plt.bar (nombres, presion, color = "green") ; plt.ylabel("Presiones (kPa)") ; plt.xlabel("Planetas"); plt.title("Presiones del Sistema Solar") ;   plt.axhline(y=media_pres, color="black", linestyle='solid')
+        plt.subplots_adjust(0.125,0.11,0.9,0.88,0.2,0.479)
+        plt.show()
 
 def ejecutar():
     Dataset1.sistema_solar()
     Dataset1.exoplanetas()
     Dataset2.datosTemperaturas()
+    Dataset2.graficos()
