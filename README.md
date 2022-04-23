@@ -35,7 +35,7 @@ Con estos resultados, y descartando para este primer análisis la idea de haber 
 (Gráficos con el porcentaje de cuerpos celestes dentro y fuera del sistema solar con una gravedad cercana(+-1,5) a la obtenida durante el experimento realizado por la tripulación(de entre los datos a los que tenemos acceso))
    
    
-Volviendo a la teoría del agujero negro, no solo es muy poco probable, sino que además no existen en nuestra base de datos(el segundo cvs que poseemos(PS...)) ningún exoplaneta cuya gravedad se corresponda con los valores experimentales que tenemos a nuestra disposición, por ello, y con el fin de buscar la solución más realista posible al problema, vamos a descartar esta afirmación y centrarnos en el sistema solar.
+Volviendo a la teoría del agujero de gusano, no solo es muy poco probable, sino que además no existen en nuestra base de datos(el segundo cvs que poseemos(Nasa)) ningún exoplaneta cuya gravedad se corresponda con los valores experimentales que tenemos a nuestra disposición, por ello, y con el fin de buscar la solución más realista posible al problema, vamos a descartar esta afirmación y centrarnos en el sistema solar.
 
 Para proseguir, la tripulación debe conseguir los datos referentes a las condiciones atmosféricas, físicas y químicas del planeta para poder prepararse para dormir hasta el rescate de forma segura.
 Analizando el cvs tenemos:
