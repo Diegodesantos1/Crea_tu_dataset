@@ -1,4 +1,4 @@
-Nombre, Presión(kPa), TemperaturaMínima(k), TemperaturaMedia(k), TemperaturaMáxima(k), Composición(+Abundante), Porcentaje(CAbundante), Composición(2+Abundante), Porcentaje(2+CAbundante), Composición(3+Abundante), Porcentaje(3+CAbundante), EstructuraTerrestre, Agua, TiempodeRotación(años)
+Nombre,Presión(kPa),TemperaturaMínima(k),TemperaturaMedia(k),TemperaturaMáxima(k),Composición(+Abundante),Porcentaje(CAbundante),Composición(2+Abundante),Porcentaje(2+CAbundante),Composición(3+Abundante),Porcentaje(3+CAbundante),EstructuraTerrestre,Agua,TiempodeRotación(años)
 Mercurio, 101.325, 90, 440, 700, K, 31.7, Na, 24.9, O, 9.5, Rocosa, Si, 0.241090
 Venus, 9321.9, 228, 737, 773, CO2, 96, N, 3, SO2, 0.015, Rocosa, No, 0.616438
 Tierra, 101.325, 184, 287.2, 331, N, 78.08, O, 20.95, Ar, 0.93, Rocosa, Si, 1
