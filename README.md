@@ -18,7 +18,21 @@ En este [repositorio](https://github.com/Diegodesantos1/Crea_tu_dataset)
 Este dataset está compuesto por varios archivos csv, de los cuales hay uno(dataset) que tiene registrados todos los planetas, satélites y lunas registrados en el sistema solar. En base a este csv hemos conseguido una lista de los planetas cuya gravedad está comprendida entre 8 y 10,5. Estos valores provienen de los experimentos realizados por la valiente tripulación en los que han calculado un valor aproximado de la gravedad en la que se encuentran(9,45 y 9,18). Considerando estos valores y asumiendo un error de medida de una unidad en ambos extremos hemos conseguido 4 cuerpos celestes, en este caso todos planetas, que son: Venus, La tierra, Saturno y Urano. Basándonos en nuestros resultados, la gravedad del planeta que más se acerca a la gravedad experimental calculada(media de las dos gravedades = 9,315) es la de Mercurio o Venus(tienen la misma gravedad). 
 Con estos resultados, y descartando para este primer análisis la idea de haber sido absorbidos por un agujero negro que distorsione el espacio o incluso el tiempo, podemos concluir que el planeta en el que estamos es Urano, ya que Venus no es opción al no estar en nuestra ruta preestablecida al comienzo del viaje.
 
-![image](https://user-images.githubusercontent.com/91721855/164700985-14a01416-0b30-4d83-a497-8816a521bf49.png) 
+![image](https://user-images.githubusercontent.com/91721855/164943985-75eaf45f-3553-45ac-b012-d5a5c7028d41.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164943993-cbc676f9-06e6-4dcd-843f-d980c27ad4c3.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164944003-28dabed7-c6ee-450c-9b01-01ff54ef4930.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164944008-395bf723-8ff9-419f-b690-656b03fb4b35.png)
+
+(Gráficos con la fuerza de gravedad de todos los cuerpos celestes dentro del sistema solar)
+
+![image](https://user-images.githubusercontent.com/91721855/164944015-5b5cf276-90c0-4dee-a539-fc9643aa55a3.png)
+
+![image](https://user-images.githubusercontent.com/91721855/164944026-34788991-e1e1-4f8c-be66-40b64daf9c0e.png)
+
+(Gráficos con el porcentaje de cuerpos celestes dentro del sistema solar con una gravedad cercana(+-1,5) a la obtenida durante el experimento realizado por la tripulación)
    
    
 Volviendo a la teoría del agujero negro, no solo es muy poco probable, sino que además no existen en nuestra base de datos(el segundo cvs que poseemos(PS...)) ningún exoplaneta cuya gravedad se corresponda con los valores experimentales que tenemos a nuestra disposición, por ello, y con el fin de buscar la solución más realista posible al problema, vamos a descartar esta afirmación y centrarnos en el sistema solar.
@@ -48,25 +62,6 @@ Por último, y más importante, el tiempo. El tiempo es la incógnita que decide
 
 *** Todos los datos extraídos del dataset, al igual que los gráficos, pueden ser comprobados en las funciones desarrolladas en este repositorio en el archivo gráficos.py
 
-[Aquí gráficos]
-
-(Gráficos que comparan las temperaturas y presiones de todos los planetas del sistema solar.)
-
-![image](https://user-images.githubusercontent.com/91721855/164943985-75eaf45f-3553-45ac-b012-d5a5c7028d41.png)
-
-![image](https://user-images.githubusercontent.com/91721855/164943993-cbc676f9-06e6-4dcd-843f-d980c27ad4c3.png)
-
-![image](https://user-images.githubusercontent.com/91721855/164944003-28dabed7-c6ee-450c-9b01-01ff54ef4930.png)
-
-![image](https://user-images.githubusercontent.com/91721855/164944008-395bf723-8ff9-419f-b690-656b03fb4b35.png)
-
-![image](https://user-images.githubusercontent.com/91721855/164944015-5b5cf276-90c0-4dee-a539-fc9643aa55a3.png)
-
-![image](https://user-images.githubusercontent.com/91721855/164944026-34788991-e1e1-4f8c-be66-40b64daf9c0e.png)
-
 ![image](https://user-images.githubusercontent.com/91721855/164944035-28b6a472-0438-43cb-b8c9-41d5e5dc6da7.png)
 
-
-
-
-
+(Gráficos que comparan las temperaturas y presiones de todos los planetas del sistema solar.)
