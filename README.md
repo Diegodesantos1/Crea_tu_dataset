@@ -32,7 +32,7 @@ Con estos resultados, y descartando para este primer análisis la idea de haber 
 
 ![image](https://user-images.githubusercontent.com/91721855/164944026-34788991-e1e1-4f8c-be66-40b64daf9c0e.png)
 
-(Gráficos con el porcentaje de cuerpos celestes dentro del sistema solar con una gravedad cercana(+-1,5) a la obtenida durante el experimento realizado por la tripulación)
+(Gráficos con el porcentaje de cuerpos celestes dentro y fuera del sistema solar con una gravedad cercana(+-1,5) a la obtenida durante el experimento realizado por la tripulación(de entre los datos a los que tenemos acceso))
    
    
 Volviendo a la teoría del agujero negro, no solo es muy poco probable, sino que además no existen en nuestra base de datos(el segundo cvs que poseemos(PS...)) ningún exoplaneta cuya gravedad se corresponda con los valores experimentales que tenemos a nuestra disposición, por ello, y con el fin de buscar la solución más realista posible al problema, vamos a descartar esta afirmación y centrarnos en el sistema solar.
