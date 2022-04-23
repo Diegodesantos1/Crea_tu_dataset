@@ -1,6 +1,6 @@
 import pandas as pd
-from pandas import DataFrame as df
 import matplotlib.pyplot as plt
+
 class Dataset1:
     def sistema_solar():
         datos = pd.read_csv("Dataset1.csv", sep =";")
@@ -45,7 +45,7 @@ class Dataset1:
         print(f"\n Los datos de la tierra son: \n {tierra}") ; print(f"\n Los datos de venus son: \n  {venus}")
         print(f"\n Los datos de saturno son: \n {saturno}") ; print(f"\n Los datos de urano son: \n {urano}")
     def exoplanetas():
-        datos_exo = pd.read_csv("PS_2022.04.22_04.00.41.csv", sep =",")
+        datos_exo = pd.read_csv("Nasa.csv", sep =",")
         lista_gravedad_exo = list(datos_exo["st_logg"]) ; lista_nombres_exo = list(datos_exo["pl_name"])
         lista_gravedad_util, lista_nombres_util = [], []
         for i in range (len(lista_gravedad_exo)):
