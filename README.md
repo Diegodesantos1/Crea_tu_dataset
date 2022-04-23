@@ -50,4 +50,4 @@ Por último, y más importante, el tiempo. El tiempo es la incógnita que decide
 
 [Aquí gráficos]
 
-Gráficos que comparan las temperaturas y presiones de todos los planetas del sistema solar.
+(Gráficos que comparan las temperaturas y presiones de todos los planetas del sistema solar.)
