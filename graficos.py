@@ -8,7 +8,7 @@ class Graficos:
         datos_exo = pd.read_csv("PS_2022.04.22_04.00.41.csv", sep =",")
         lista_gravedad = list(datos["gravity"]) ; lista_nombres = list(datos["eName"])
         lista_gravedad_exo = list(datos_exo["st_logg"]) ; lista_nombres_exo = list(datos_exo["pl_name"])
-        gravedad_util, nombres_util, gravedad_grafico, nombres_grafico = [], [], [], []
+        lista_gravedadad_util,gravedad_util, nombres_util, gravedad_grafico1, nombres_grafico1, gravedad_grafico2, nombres_grafico2, gravedad_grafico3, nombres_grafico3, gravedad_grafico4, nombres_grafico4 = [], [], [], [], [], [], [], [], [], [], []
         # print(lista_gravedad) ; print(lista_gravedad_exo)
         for i in range (len(lista_gravedad)):
             if 8.0 < lista_gravedad[i] <10.5:
@@ -18,10 +18,19 @@ class Graficos:
             if 8.0 < lista_gravedad_exo[i] < 10.5:
                 gravedad_util.append(lista_nombres_exo[i])
                 nombres_util.append(lista_nombres_exo[i])
-        for i in range (len(lista_gravedad) and len(lista_nombres)):
-            if lista_gravedad[i] != 0:
-                gravedad_grafico.append(lista_gravedad[i])
-                nombres_grafico.append(lista_nombres[i])
+        for i in range (14):
+            gravedad_grafico1.append(lista_gravedad_util.pop(0))
+            nombres_grafico1.append(lista_gravedad_util.pop(0))
+        for i in range (14):
+            gravedad_grafico2.append(lista_gravedad_util.pop(0))
+            nombres_grafico2.append(lista_gravedad.pop(0))
+        for i in range (14):
+            gravedad_grafico3.append(lista_gravedad_util.pop(0))
+            nombres_grafico3.append(lista_gravedad_util.pop(0))
+        for i in range (15):
+            gravedad_grafico4.append(lista_gravedad_util.pop(0))
+            nombres_grafico4.append(lista_gravedad_util.pop(0))
+        print((gravedad_grafico1)) ; print((gravedad_grafico2)) ; print((gravedad_grafico3)) ; print((gravedad_grafico4))
 
         print(gravedad_util)
         print("son las gravedades correspondientes a los siguientes nombres:")
@@ -29,7 +38,11 @@ class Graficos:
         utiles_porcentaje = 0.01509433962
         no_utiles_porcentaje = 1 -utiles_porcentaje
         parametros = [utiles_porcentaje, no_utiles_porcentaje] ; colores = ["#AAF683", "#EE6055"]
-        plt.bar (nombres_grafico, gravedad_grafico) ; plt.show()
+        plt.subplot(2,2,1) ; plt.bar (nombres_grafico1, gravedad_grafico1)
+        plt.subplot(2,2,2) ; plt.bar (nombres_grafico2, gravedad_grafico2)
+        plt.subplot(2,2,3) ; plt.bar (nombres_grafico3, gravedad_grafico3)
+        plt.subplot(2,2,4) ; plt.bar (nombres_grafico4, gravedad_grafico4)
+        plt.show()
         plt.pie (parametros, colors = colores, autopct="%0.1f %%")
         plt.legend(["Gravedad válida", "Gravedad no válida"], loc='upper right')
         plt.show()
