@@ -1,8 +1,7 @@
 import pandas as pd
 from pandas import DataFrame as df
 import matplotlib.pyplot as plt
-import numpy as np
-class Graficos:
+class Dataset1:
     def sistema_solar():
         datos = pd.read_csv("Dataset1.csv", sep =";")
         lista_gravedad = list(datos["gravity"]) ; lista_nombres = list(datos["eName"])
@@ -32,7 +31,7 @@ class Graficos:
             a=nombres_util.pop(0)
             b = gravedad_util.pop(0)
             diccionario[a] = b
-        print(f"\n\nExisten 265 planetas y cuerpos del sistema solar con gravedad, pero solo estos cumplen las condiciones {diccionario}")
+        print(f"\n\nExisten 265 planetas y cuerpos del sistema solar con gravedad, pero solo estos cumplen las condiciones \n{diccionario}")
         utiles_porcentaje = 0.01509433962 ; no_utiles_porcentaje = 1 -utiles_porcentaje
         parametros = [utiles_porcentaje, no_utiles_porcentaje] ; colores1 = ["#AAF683", "#EE6055"] ; colores2 = ["r", "r", "r", "g", "r", "g", "r", "r", "r", "r", "r", "r", "r", "g", "g"]
         plt.bar (nombres_grafico1, gravedad_grafico1, color = "red") ; plt.ylabel("Gravedad") ; plt.xlabel("Cuerpos Celestes"); plt.title("Sistema Solar") ; plt.show()
@@ -59,32 +58,35 @@ class Graficos:
         plt.pie (parametros, colors = colores, autopct="%0.1f %%")
         plt.title("Exoplanetas que cumplen las condidiones") ; plt.legend(["Las cumple", "No las cumple"], loc='upper right')
         plt.show()
-Graficos.sistema_solar()
-Graficos.exoplanetas()
 
-def datosTemperaturas():
-    datos = pd.read_csv("planetas.csv", sep =",").to_dict()
-    planetas = 7
-    datos_dict = []
-    print(f"\n\n {datos}\n \n")
-    for i in range(planetas):
-        datos_dict.append({
-            datos['Nombre'][i]:{
-                'Presión(kPa)': datos['Presión(kPa)'][i],
-                'TemperaturaMínima(k)': datos['TemperaturaMínima(k)'][i],
-                'TemperaturaMáxima(k)': datos['TemperaturaMáxima(k)'][i],
-                'TemperaturaMedia(k)': datos['TemperaturaMedia(k)'][i],
-                'Composición(+Abundante)': datos['Composición(+Abundante)'][i],
-                'Composición(2+Abundante)': datos['Composición(2+Abundante)'][i],
-                'Composición(3+Abundante)': datos['Composición(3+Abundante)'][i],
-                'Porcentaje(CAbundante)': datos['Porcentaje(CAbundante)'][i],
-                'Porcentaje(2+CAbundante)': datos['Porcentaje(2+CAbundante)'][i],
-                'Porcentaje(3+CAbundante)': datos['Porcentaje(3+CAbundante)'][i],
-                'EstructuraTerrestre': datos['EstructuraTerrestre'][i],
-                'Agua': datos['Agua'][i],
-                'TiempodeRotación(años)': datos['TiempodeRotación(años)'][i]
-            }
-        })
-    print(datos_dict)
+class Dataset2:
+    def datosTemperaturas():
+        datos = pd.read_csv("planetas.csv", sep =",").to_dict()
+        planetas = 7
+        datos_dict = []
+        print(f"\n\n {datos}\n \n")
+        for i in range(planetas):
+            datos_dict.append({
+                datos['Nombre'][i]:{
+                    'Presión(kPa)': datos['Presión(kPa)'][i],
+                    'TemperaturaMínima(k)': datos['TemperaturaMínima(k)'][i],
+                    'TemperaturaMáxima(k)': datos['TemperaturaMáxima(k)'][i],
+                    'TemperaturaMedia(k)': datos['TemperaturaMedia(k)'][i],
+                    'Composición(+Abundante)': datos['Composición(+Abundante)'][i],
+                    'Composición(2+Abundante)': datos['Composición(2+Abundante)'][i],
+                    'Composición(3+Abundante)': datos['Composición(3+Abundante)'][i],
+                    'Porcentaje(CAbundante)': datos['Porcentaje(CAbundante)'][i],
+                    'Porcentaje(2+CAbundante)': datos['Porcentaje(2+CAbundante)'][i],
+                    'Porcentaje(3+CAbundante)': datos['Porcentaje(3+CAbundante)'][i],
+                    'EstructuraTerrestre': datos['EstructuraTerrestre'][i],
+                    'Agua': datos['Agua'][i],
+                    'TiempodeRotación(años)': datos['TiempodeRotación(años)'][i]
+                }
+            })
+        print(datos_dict)
 
-datosTemperaturas()
+
+def ejecutar():
+    Dataset1.sistema_solar()
+    Dataset1.exoplanetas()
+    Dataset2.datosTemperaturas()
